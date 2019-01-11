@@ -1,0 +1,22 @@
+/* 
+  Localization.strings
+  BiometryExample
+
+  Created by Anton Belousov on 05/05/2018.
+  Copyright © 2018 kp. All rights reserved.
+*/
+
+"LoginViewController.Auth.Fail.Alert.Title"     = "Неудачная авторизация";
+"LoginViewController.Auth.Fail.Alert.OK"        = "OK";
+"LoginViewController.Title"                     = "Введите пароль";
+"NewPasscodeViewController.Title.Default"       = "Придумайте пароль";
+"NewPasscodeViewController.Title.Confirmation"  = "Подтвердите пароль";
+"NewPasscodeViewController.DoesNotMatch.Title"  = "Пароли не совпадают";
+
+"BiometryError.FaceID.Disabled"         = "Откройте Настройки > FaceID и код-пароль, чтобы включить эту функцию";
+"BiometryError.TouchID.Disabled"        = "Откройте Настройки > TouchID и код-пароль, чтобы включить эту функцию";
+"BiometryError.FaceID.PasscodeNotSet"   = "Откройте Настройки > FaceID и код-пароль, чтобы создать пароль";
+"BiometryError.TouchID.PasscodeNotSet"  = "Откройте Настройки > TouchID и код-пароль, чтобы создать пароль";
+"BiometryError.TooManyFailedAttempts"   = "Слишком много неудачных попыток, вы можете заблокировать и разблокировать устройство, а затем повторить попытку";
+
+"Biometry.LocalizedReason.Default"      = "Используйте отпечаток пальца для авторизации";

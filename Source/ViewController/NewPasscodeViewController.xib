@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewPasscodeViewController">
+            <connections>
+                <outlet property="passcodeConfirmationInputProgressView" destination="CZN-Od-lPO" id="bvu-bC-boC"/>
+                <outlet property="passcodeInputProgressView" destination="3uu-yy-2vO" id="QMM-AC-dzX"/>
+                <outlet property="passcodeNumberPad" destination="rnC-Pq-mok" id="FDo-NH-bVr"/>
+                <outlet property="passcodesDoNotMatchLabel" destination="WzM-EM-pH3" id="E8q-cK-phd"/>
+                <outlet property="titleLabel" destination="1BL-hp-n0W" id="2FB-o5-K9H"/>
+                <outlet property="view" destination="2iG-eg-Rrb" id="ezv-FY-Dss"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2iG-eg-Rrb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create access code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BL-hp-n0W">
+                    <rect key="frame" x="94" y="113" width="187.5" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uu-yy-2vO" customClass="PasscodeInputProgressView">
+                    <rect key="frame" x="115" y="155.5" width="145" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="requiredPasscodeLength">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="currentPasscodeLength">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZN-Od-lPO" customClass="PasscodeInputProgressView">
+                    <rect key="frame" x="115" y="155.5" width="145" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="requiredPasscodeLength">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="currentPasscodeLength">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnC-Pq-mok" customClass="PasscodeNumberPad">
+                    <rect key="frame" x="37.5" y="215.5" width="300" height="346"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="346" id="RVv-Io-Bmg"/>
+                        <constraint firstAttribute="width" constant="300" id="h3A-B7-CIM"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passcodes do not match. Try again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzM-EM-pH3">
+                    <rect key="frame" x="78.5" y="185.5" width="219" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <color key="textColor" red="0.82768273349999999" green="0.22447858749999999" blue="0.16070328649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WzM-EM-pH3" firstAttribute="centerX" secondItem="CZN-Od-lPO" secondAttribute="centerX" id="1cF-dj-EoT"/>
+                <constraint firstItem="rnC-Pq-mok" firstAttribute="centerY" secondItem="nOe-eQ-bIc" secondAttribute="centerY" constant="45" id="1zu-qp-WkJ"/>
+                <constraint firstItem="3uu-yy-2vO" firstAttribute="top" secondItem="1BL-hp-n0W" secondAttribute="bottom" constant="16" id="2iS-tA-EMM"/>
+                <constraint firstItem="3uu-yy-2vO" firstAttribute="centerX" secondItem="rnC-Pq-mok" secondAttribute="centerX" id="KBg-i2-Fap" userLabel="Passcode Input Prograss View Center X"/>
+                <constraint firstItem="CZN-Od-lPO" firstAttribute="top" secondItem="1BL-hp-n0W" secondAttribute="bottom" constant="16" id="Pqw-PW-vdY"/>
+                <constraint firstItem="rnC-Pq-mok" firstAttribute="top" secondItem="3uu-yy-2vO" secondAttribute="bottom" constant="40" id="W73-ao-kFd"/>
+                <constraint firstItem="rnC-Pq-mok" firstAttribute="centerX" secondItem="nOe-eQ-bIc" secondAttribute="centerX" id="X0v-bj-Xbg"/>
+                <constraint firstItem="rnC-Pq-mok" firstAttribute="top" secondItem="CZN-Od-lPO" secondAttribute="bottom" constant="40" id="XjV-Z7-xwr"/>
+                <constraint firstItem="WzM-EM-pH3" firstAttribute="top" secondItem="CZN-Od-lPO" secondAttribute="bottom" constant="10" id="jZu-j9-ZDO"/>
+                <constraint firstItem="1BL-hp-n0W" firstAttribute="centerX" secondItem="nOe-eQ-bIc" secondAttribute="centerX" id="l0S-xQ-mMl"/>
+                <constraint firstItem="1BL-hp-n0W" firstAttribute="centerX" secondItem="3uu-yy-2vO" secondAttribute="centerX" id="mmf-ua-9gc"/>
+                <constraint firstItem="CZN-Od-lPO" firstAttribute="centerX" secondItem="rnC-Pq-mok" secondAttribute="centerX" id="xhL-u3-ONZ" userLabel="Passcode Confirmation Input Prograss View Center X"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="nOe-eQ-bIc"/>
+        </view>
+    </objects>
+</document>

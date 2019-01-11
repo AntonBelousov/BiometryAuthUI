@@ -1,0 +1,22 @@
+/* 
+  Localization.strings
+  BiometryExample
+
+  Created by Anton Belousov on 05/05/2018.
+  Copyright © 2018 kp. All rights reserved.
+*/
+
+"LoginViewController.Auth.Fail.Alert.Title"     = "Auth failed";
+"LoginViewController.Auth.Fail.Alert.OK"        = "OK";
+"LoginViewController.Title"                     = "Enter access code";
+"NewPasscodeViewController.Title.Default"       = "Create access code";
+"NewPasscodeViewController.Title.Confirmation"  = "Confirm access code";
+"NewPasscodeViewController.DoesNotMatch.Title"  = "Passcodes do not match. Try again";
+
+"BiometryError.FaceID.Disabled"         = "Go to Settings > FaceID and Passcode to enable the feature";
+"BiometryError.TouchID.Disabled"        = "Go to Settings > TouchID and Passcode to enable the feature";
+"BiometryError.FaceID.PasscodeNotSet"   = "Go to Settings > FaceID and Passcode to set passcode";
+"BiometryError.TouchID.PasscodeNotSet"  = "Go to Settings > TouchID and Passcode to enable the passcode";
+"BiometryError.TooManyFailedAttempts"   = "There were too many failed biometry attempts, you could lock and unlock device and then try again";
+
+"Biometry.LocalizedReason.Default"      = "Use your fingerprint to enter the app";

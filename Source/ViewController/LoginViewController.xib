@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="passcodeInputProgressView" destination="q6v-b5-Wio" id="7kJ-nv-q5j"/>
+                <outlet property="passcodeNumberPad" destination="NXz-9t-gGK" id="2iv-Xl-H4b"/>
+                <outlet property="titleLabel" destination="uWx-Yi-D0E" id="nLj-FF-yJQ"/>
+                <outlet property="view" destination="z4z-0X-arj" id="M6j-BV-hRQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="z4z-0X-arj">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6v-b5-Wio" customClass="PasscodeInputProgressView">
+                    <rect key="frame" x="142" y="165.5" width="91" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="1" constant="20" id="Flt-FI-bXB"/>
+                        <constraint firstAttribute="width" priority="1" constant="91" id="uax-HY-O6z"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="requiredPasscodeLength">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="currentPasscodeLength">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXz-9t-gGK" customClass="PasscodeNumberPad">
+                    <rect key="frame" x="37.5" y="215.5" width="300" height="346"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="346" id="iPG-ZA-CYr"/>
+                        <constraint firstAttribute="width" constant="300" id="ujN-eN-rod"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter access code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWx-Yi-D0E">
+                    <rect key="frame" x="108.5" y="125.5" width="159" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NXz-9t-gGK" firstAttribute="centerY" secondItem="7BW-WW-Oeq" secondAttribute="centerY" constant="45" id="CFA-Sd-4du"/>
+                <constraint firstItem="q6v-b5-Wio" firstAttribute="top" secondItem="uWx-Yi-D0E" secondAttribute="bottom" constant="16" id="CHk-8J-5kM"/>
+                <constraint firstItem="uWx-Yi-D0E" firstAttribute="centerX" secondItem="z4z-0X-arj" secondAttribute="centerX" id="Puc-g2-4bX"/>
+                <constraint firstItem="q6v-b5-Wio" firstAttribute="centerX" secondItem="NXz-9t-gGK" secondAttribute="centerX" id="TfL-Tj-OiC" userLabel="Passcode Input Prograss View Center X"/>
+                <constraint firstItem="NXz-9t-gGK" firstAttribute="centerX" secondItem="7BW-WW-Oeq" secondAttribute="centerX" id="vC4-tS-R8O"/>
+                <constraint firstItem="NXz-9t-gGK" firstAttribute="top" secondItem="q6v-b5-Wio" secondAttribute="bottom" constant="30" id="y8s-TG-SvL"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="7BW-WW-Oeq"/>
+        </view>
+    </objects>
+</document>
