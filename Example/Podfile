@@ -3,5 +3,5 @@ platform :ios, '10.0'
 
 target 'BiometryExample' do
     use_frameworks!
-    pod 'BiometryAuthUI', :git => 'https://github.com/AntonBelousov/BiometryAuthUI.git', :branch => 'develop'
+    pod 'BiometryAuthUI', :git => 'https://github.com/AntonBelousov/BiometryAuthUI.git'
 end

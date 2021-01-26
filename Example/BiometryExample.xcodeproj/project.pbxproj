@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B214114FC06031E96BF871C /* Pods_BiometryExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0388585D26FAACA2500C1FC6 /* Pods_BiometryExample.framework */; };
+		95AEE47A1E8BA9CB1B65FF70 /* Pods_BiometryExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170DDBE46AC3DE9C69E7F7E2 /* Pods_BiometryExample.framework */; };
 		F31BF0F52097C1B00010CFD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31BF0F42097C1B00010CFD6 /* AppDelegate.swift */; };
 		F31BF0F72097C1B00010CFD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31BF0F62097C1B00010CFD6 /* ViewController.swift */; };
 		F31BF0FA2097C1B00010CFD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31BF0F82097C1B00010CFD6 /* Main.storyboard */; };
@@ -30,8 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0388585D26FAACA2500C1FC6 /* Pods_BiometryExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiometryExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF95D8ACAABBA54FA4291744 /* Pods-BiometryExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiometryExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiometryExample/Pods-BiometryExample.release.xcconfig"; sourceTree = "<group>"; };
+		170DDBE46AC3DE9C69E7F7E2 /* Pods_BiometryExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiometryExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2656ABA599E8A8B3797018E1 /* Pods-BiometryExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiometryExample.release.xcconfig"; path = "Target Support Files/Pods-BiometryExample/Pods-BiometryExample.release.xcconfig"; sourceTree = "<group>"; };
 		F31BF0F12097C1B00010CFD6 /* BiometryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiometryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31BF0F42097C1B00010CFD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F31BF0F62097C1B00010CFD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		F3BDA8ED209A8178007533E3 /* BiometryExample-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BiometryExample-BridgingHeader.h"; sourceTree = "<group>"; };
 		F3C36834209D46D0001CCA14 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localization.strings; sourceTree = "<group>"; };
 		F3C36836209D46D5001CCA14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
-		FC46E3562AABCACA298976D3 /* Pods-BiometryExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiometryExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiometryExample/Pods-BiometryExample.debug.xcconfig"; sourceTree = "<group>"; };
+		FB4D105E6E1E0E18B068DCC0 /* Pods-BiometryExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiometryExample.debug.xcconfig"; path = "Target Support Files/Pods-BiometryExample/Pods-BiometryExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,20 +50,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B214114FC06031E96BF871C /* Pods_BiometryExample.framework in Frameworks */,
+				95AEE47A1E8BA9CB1B65FF70 /* Pods_BiometryExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7648D075FB4856C6203090C4 /* Pods */ = {
+		E0BA5E4D473F56C6B11FB686 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FC46E3562AABCACA298976D3 /* Pods-BiometryExample.debug.xcconfig */,
-				DF95D8ACAABBA54FA4291744 /* Pods-BiometryExample.release.xcconfig */,
+				FB4D105E6E1E0E18B068DCC0 /* Pods-BiometryExample.debug.xcconfig */,
+				2656ABA599E8A8B3797018E1 /* Pods-BiometryExample.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2AEE2EDA2DDF26E07FC0056 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				170DDBE46AC3DE9C69E7F7E2 /* Pods_BiometryExample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F31BF0E82097C1B00010CFD6 = {
@@ -71,8 +79,8 @@
 			children = (
 				F31BF0F32097C1B00010CFD6 /* BiometryExample */,
 				F31BF0F22097C1B00010CFD6 /* Products */,
-				7648D075FB4856C6203090C4 /* Pods */,
-				F579F32252D98AD07E5DBF3F /* Frameworks */,
+				E0BA5E4D473F56C6B11FB686 /* Pods */,
+				E2AEE2EDA2DDF26E07FC0056 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,14 +107,6 @@
 			path = BiometryExample;
 			sourceTree = "<group>";
 		};
-		F579F32252D98AD07E5DBF3F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0388585D26FAACA2500C1FC6 /* Pods_BiometryExample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,12 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F31BF1032097C1B20010CFD6 /* Build configuration list for PBXNativeTarget "BiometryExample" */;
 			buildPhases = (
-				C3A41F50CB679E7F985D5E08 /* [CP] Check Pods Manifest.lock */,
+				8DF45A0842ED98DC2E42E7B1 /* [CP] Check Pods Manifest.lock */,
 				F31BF0ED2097C1B00010CFD6 /* Sources */,
 				F31BF0EE2097C1B00010CFD6 /* Frameworks */,
 				F31BF0EF2097C1B00010CFD6 /* Resources */,
 				F3BDA8FF209A824A007533E3 /* Embed Frameworks */,
-				2CCAA5A50FB9ECA72A17A9F5 /* [CP] Embed Pods Frameworks */,
+				D696A2245B1A37FD9D803E64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,40 +179,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2CCAA5A50FB9ECA72A17A9F5 /* [CP] Embed Pods Frameworks */ = {
+		8DF45A0842ED98DC2E42E7B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BiometryExample/Pods-BiometryExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BiometryAuthUI/BiometryAuthUI.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BiometryAuthUI.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiometryExample/Pods-BiometryExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C3A41F50CB679E7F985D5E08 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BiometryExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D696A2245B1A37FD9D803E64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BiometryExample/Pods-BiometryExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BiometryExample/Pods-BiometryExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BiometryExample/Pods-BiometryExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -376,11 +379,11 @@
 		};
 		F31BF1042097C1B20010CFD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC46E3562AABCACA298976D3 /* Pods-BiometryExample.debug.xcconfig */;
+			baseConfigurationReference = FB4D105E6E1E0E18B068DCC0 /* Pods-BiometryExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PUSLWJPKKF;
 				INFOPLIST_FILE = "$(SRCROOT)/BiometryExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -396,11 +399,11 @@
 		};
 		F31BF1052097C1B20010CFD6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF95D8ACAABBA54FA4291744 /* Pods-BiometryExample.release.xcconfig */;
+			baseConfigurationReference = 2656ABA599E8A8B3797018E1 /* Pods-BiometryExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PUSLWJPKKF;
 				INFOPLIST_FILE = "$(SRCROOT)/BiometryExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

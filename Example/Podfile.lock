@@ -1,22 +1,21 @@
 PODS:
-  - BiometryAuthUI (0.0.2)
+  - BiometryAuthUI (0.0.3)
 
 DEPENDENCIES:
-  - BiometryAuthUI (from `https://github.com/AntonBelousov/BiometryAuthUI.git`, branch `develop`)
+  - BiometryAuthUI (from `https://github.com/AntonBelousov/BiometryAuthUI.git`)
 
 EXTERNAL SOURCES:
   BiometryAuthUI:
-    :branch: develop
     :git: https://github.com/AntonBelousov/BiometryAuthUI.git
 
 CHECKOUT OPTIONS:
   BiometryAuthUI:
-    :commit: 4975a88f63def9eefd6d9b4de5b2aac7edd8f6c5
+    :commit: 8a8be8b292d6d8173335f7aba3979d60e12f391c
     :git: https://github.com/AntonBelousov/BiometryAuthUI.git
 
 SPEC CHECKSUMS:
-  BiometryAuthUI: a33f5f320db438008b738e4720855046347b2936
+  BiometryAuthUI: c8befb92dd8873fbbccf907481678b248d51fc90
 
-PODFILE CHECKSUM: 26bcc83f9f496968351971c1b33344a4387e3087
+PODFILE CHECKSUM: 09e1d9106fa6995b75e90c721c49d93d110c426b
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.10.0

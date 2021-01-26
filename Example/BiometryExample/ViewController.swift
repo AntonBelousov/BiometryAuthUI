@@ -16,8 +16,8 @@ class ViewController: UIViewController {
         BiometryUIModule.shared().localizationTable = "Localization"
         
         let vc = LoginViewController()
-        vc.tintColor = UIColor.brown
-        vc.backgroundColor = UIColor.lightGray
+        vc.tintColor = UIColor.white
+        vc.backgroundColor = UIColor.black
         vc.shouldAskForBiometryOnDidAppear = true
         vc.successCompletionBlock = {
             [weak self] in
