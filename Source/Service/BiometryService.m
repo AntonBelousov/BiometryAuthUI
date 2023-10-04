@@ -52,13 +52,14 @@
                 return BiometryTypeTouchID;
             case LABiometryTypeFaceID:
                 return BiometryTypeFaceID;
+            default: break;
         }
-    } else {
-        if (canEvaluate) {
-            return BiometryTypeTouchID;
-        }
-        return BiometryTypeNone;
     }
+    
+    if (canEvaluate) {
+        return BiometryTypeTouchID;
+    }
+    return BiometryTypeNone;
 }
 
 - (BOOL)canEvaluateBiometry:(NSError **)error {
